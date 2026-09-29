@@ -1,8 +1,11 @@
 from pathlib import Path
 import json
 import subprocess
+import os
 
-INPUT_VIDEO = Path("input/test.mp4")
+INPUT_VIDEO = Path(
+    os.environ.get("AICLIPPER_INPUT", "input/current.mp4")
+)
 AI_CLIPS = Path("output/ai_clips.json")
 OUTPUT_DIR = Path("output/ai_generated")
 
