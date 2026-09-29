@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Downloaded/input videos
+input/*.mp4
+input/*.webm
+input/*.mkv
+input/*.mov
+
+# Generated output
+output/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# VS Code
+.vscode/
